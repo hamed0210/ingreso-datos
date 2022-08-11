@@ -1,0 +1,182 @@
+:root {
+	--color-primary: #1e2a78;
+	--color-secundary: #6f86d6;
+	--color-label: #212529;
+	--color-disabled: #cdd5d5;
+	--color-warning: #d35e35;
+	--color-danger: #d32f2f;
+	--color-title: #808b97;
+	--color-success: #4fa98d;
+	--background-primary: #ffffff;
+	--background-secundary: #cacbd5;
+}
+
+body::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(30, 42, 120, 0.2);
+}
+
+.btn {
+	padding: 0.313rem 0.625rem;
+	border: none;
+	border-radius: 0.313rem;
+	font-weight: 500;
+	color: var(--background-primary);
+	transition: background-color 0.3s ease;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn_basic {
+	padding: 3px 22px;
+	border: solid 0.125rem var(--color-success);
+	color: var(--color-success);
+	background-color: var(--background-primary);
+}
+
+.btn_basic:hover {
+	color: var(--background-secundary);
+	background-color: #378f73;
+}
+
+.btn_success {
+	background-color: var(--color-success);
+}
+
+.btn_success:hover {
+	background-color: #378f73;
+}
+
+.btn_delete {
+	color: var(--background-secundary);
+	background-color: var(--color-danger);
+}
+
+.btn_delete:hover {
+	background-color: #ad1c1c;
+}
+
+.btn_cancel {
+	color: var(--background-secundary);
+	background-color: var(--color-label);
+}
+
+.btn_cancel:hover {
+	background-color: #14171a;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: var(--background-primary);
+	color: #000000;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	line-height: 1.5;
+}
+
+img,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+} /*para navegadores que no las reconoce*/
+
+li {
+	margin-left: 16px;
+	margin-left: 1rem;
+	list-style-type: inherit;
+	list-style-position: inside;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+abbr,
+i,
+dfn,
+em {
+	font-style: italic;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+code,
+pre {
+	font-family: monospace;
+}
+
+textarea {
+	resize: none;
+}
+
+button,
+input,
+optgroup,
+option,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+input[type='checkbox'],
+input[type='radio'],
+label,
+select {
+	cursor: pointer;
+}
+
+*[desabled] {
+	cursor: default;
+	color: #999999;
+	background-color: #dddddd;
+}
